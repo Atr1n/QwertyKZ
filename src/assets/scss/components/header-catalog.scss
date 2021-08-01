@@ -1,0 +1,46 @@
+.header-burger {
+    position: relative;
+    padding: 0 3rem;
+    background: $blue;
+    line-height: 46px;
+    color: #FFFFFF;
+    cursor: pointer;
+    &::before {
+        content: "";
+        width: 17px;
+        height: 14px;
+        margin-top: 16px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: top;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 22px;
+        width: 17px;
+        height: 2px;
+        display: block;
+        background: #fff;
+    }
+}
+
+.header-catalog {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 220px;
+    width: 258px;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    ul {
+        display: grid;
+        li {
+            a {
+                color: $blue;
+            }
+        }
+    }
+}

@@ -1,32 +1,519 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Template</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div id="app">
-        <header></header>
 
-        <div class="content-wrapper">
-          <!-- expamle section (remove me) -->
-          <section id="promo" style="text-align:center;">
-            <div class="container">
-              <h1>Webpack Template</h1>
-            </div>
-          </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Qwerty.kz</title>
+	</head>
 
-          <!-- expamle vue component -->
-          <example-component />
-        </div>
+	<body>
 
-        <footer></footer>
-      </div>
-      <!-- end #app wrapper -->
-    </div>
-    <!-- end main wrapper -->
-  </body>
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<div class="header-top__item">
+						<ul>
+							<li><a href="#">Войти</a> </li>
+							<li><a href="#">Зарегистрироваться</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-content">
+					<div class="header-item">
+						<a href="index.html">
+							<img src="assets/img/logo.svg" alt="Qwerty" width="200">
+						</a>
+					</div>
+					<div class="header-item">
+						<div class="header-item__star">
+							<img src="assets/img/избр.svg" alt="Корзина" width="50" height="50">
+						</div>
+						<div class="header-item__basket">
+							<img src="assets/img/корз.svg" alt="Корзина" width="50" height="50">
+						</div>
+					</div>
+				</div>
+				<div class="header-wrapper">
+					<div class="header-list">
+						<div class="header-burger">
+							Все категории
+						</div>
+						<div class="header-catalog none">
+							<ul>
+								<li><a href="">asd</a></li>
+								<li><a href="">asd</a></li>
+								<li><a href="">asd</a></li>
+								<li><a href="">asd</a></li>
+								<li><a href="">asd</a></li>
+							</ul>
+						</div>
+						<div class="header-list-item">
+							<ul>
+								<li><a href="#">Акции</a> </li>
+								<li><a href="#">Для партнеров</a> </li>
+								<li><a href="#">Частные объявления</a> </li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="header-list-item">
+							<input type="search" placeholder="Огромный выбор товаров">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main-container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="main-item">
+								<img src="assets/img/слад/smart-fen.jpeg" width="350" alt="Товар">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main-item">
+								<img src="assets/img/слад/smart-tv.jpg" width="350"alt="Товар">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main-item">
+								<img src="assets/img/слад/xiomi.jpg" width="350" alt="Товар">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="main-item">
+								<img src="assets/img/слад/smart.jpg" width="350"alt="Товар">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+  					<div class="swiper-button-next"></div>
+				</div>
+				<div class="main-wrapper">
+					<div class="main-banner">
+						<img src="assets/img/banner-1.jpg" alt="Банер">
+					</div>
+					<div class="main-banner">
+						<img src="assets/img/banner-2.jpg" alt="Банер">
+					</div>
+					<div class="main-banner">
+						<img src="assets/img/banner-3.jpg" alt="Банер">
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="services">
+			<div class="container">
+				<div class="services-content">
+					<div class="services-item">
+						<div class="services-img">
+							<img src="assets/img/shipping.svg" alt="cart" width="60" height="60">
+						</div>
+						<div class="services-desc">
+							<h3><strong>Бесплатная доставка</strong> <br> На все заказы <br> свыше 99%</h3>
+						</div>
+					</div>
+					<div class="services-item">
+						<div class="services-img">
+							<img src="assets/img/return.svg" alt="cart" width="60" height="60">
+						</div>
+						<div class="services-desc">
+							<h3><strong>30-дневная гарантия</strong> <br> Возврата денег</h3>
+						</div>
+					</div>
+					<div class="services-item">
+						<div class="services-img">
+							<img src="assets/img/safe-shopping.svg" alt="cart" width="60" height="60">
+						</div>
+						<div class="services-desc">
+							<h3><strong>Гарантия на</strong> <br> Безопасные покупки</h3>
+						</div>
+					</div>
+					<div class="services-item">
+						<div class="services-img">
+							<img src="assets/img/lowest-price.svg" alt="cart" width="60" height="60">
+						</div>
+						<div class="services-desc">
+							<h3><strong>Гарантия на</strong> <br> самые низкие цены</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOR SLIKIKLAID  -->
+
+		<section class="products">
+			<div class="container">
+				<div class="products-title">
+					<h3>Новый продукт | </h3>
+					<h3>Популярный | </h3>
+					<h3>Популярный </h3>
+				</div>
+				<div class="products-content">
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/479sdadqwd12.jpg" alt="" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Apacer AP2TBAC630T-1.jpg" alt="" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Apacer</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Audio-Technica AT2020.jpeg" alt="" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender C-2599HD.jpeg" alt="" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/479sdadqwd12.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Mi Watch Lite.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Steelseries  Apex 7.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="brand">
+			<div class="container">
+				<div class="brand-title">
+					<h2>Наши партнеры</h2>
+				</div>
+				<div class="swiper-container-brand brand-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="brand-item">
+								<img src="assets/img/brand-1.jpg" alt="партнер">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="brand-item">
+								<img src="assets/img/brand-3.jpg" alt="партнер">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="brand-item">
+								<img src="assets/img/brand-4.jpg" alt="партнер">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="brand-item">
+								<img src="assets/img/brand-5.jpg" alt="партнер">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="brand-item">
+								<img src="assets/img/brand-6.jpg" alt="партнер">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="comments">
+			<div class="container">
+				<div class="comments-title">
+					<h2>Наши отзывы</h2>
+				</div>
+				<div class="comments-content">
+					<div class="comments-item">
+						<div class="comments-item__img">
+							<img src="assets/img/client-1.jpg" alt="клиент">
+						</div>
+						<div class="comments-item__title">
+							<h3>Нурсултанов Руслан</h3>
+						</div>
+						<div class="comments-item__text">
+							<p>Ебать нихуева закупился чисто кайф а ща чисто на чиле на расслабоне можно пивко хуярить качаца</p>
+						</div>
+					</div>
+					<div class="comments-item">
+						<div class="comments-item__img">
+							<img src="assets/img/client-2.jpg" alt="клиент">
+						</div>
+						<div class="comments-item__title">
+							<h3>Нурсултанов Руслан</h3>
+						</div>
+						<div class="comments-item__text">
+							<p>Ебать нихуева закупился чисто кайф а ща чисто на чиле на расслабоне можно пивко хуярить качаца</p>
+						</div>
+					</div>
+					<div class="comments-item">
+						<div class="comments-item__img">
+							<img src="assets/img/client-3.jpg" alt="клиент">
+						</div>
+						<div class="comments-item__title">
+							<h3>Нурсултанов Руслан</h3>
+						</div>
+						<div class="comments-item__text">
+							<p>Ебать нихуева закупился чисто кайф а ща чисто на чиле на расслабоне можно пивко хуярить качаца</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="arrivals">
+			<div class="container">
+				<div class="arrivals-title">
+					<h2>Новое прибытие</h2>
+				</div>
+				<div class="products-content">
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+					<div class="products-item">
+						<div class="products-img">
+							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+						</div>
+						<div class="products-descr">
+							<h4>Aim Analog Watch</h4>
+						</div>
+						<div class="products-price">
+							45,00 T
+						</div>
+						<div class="products-icons">
+							<div class="products-icon">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<p>Qwerty.kz © 2021. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
 </html>

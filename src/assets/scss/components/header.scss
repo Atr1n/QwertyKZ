@@ -1,0 +1,96 @@
+.header {
+    margin-top: 1rem;
+    &-top {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid #666;
+        ul {
+            display: flex;
+            li {
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+                a {
+                    color: $blue;
+                    font-size: 15px;
+                    font-weight: 600;
+                    transition: all ease-out .3s;
+                    &:hover {
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    &-item {
+        display: flex;
+        &__basket {
+            padding: 10px;
+            margin-left: 1rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: $blue;
+            cursor: pointer;
+        }
+        &__star{
+            padding: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: $yellow;
+            cursor: pointer;
+        }
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        &-item {
+            &:last-child {
+                margin-left: auto;
+            }
+            input {
+                width: 200px;
+                padding: 5px 10px;
+                border: 1px solid $yellow;
+                font-size: 16px;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3rem;
+            li {
+                &:not(:first-child) {
+                    margin-left: 1rem;
+                }
+                a {
+                    margin-left: 2rem;
+                    color: $blue;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: all ease-out .3s;
+                    &:hover {
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search {
+    padding: 0.4rem 3rem;
+    border-radius: 15px;
+    color: #fff !important;
+    background: $blue;
+}

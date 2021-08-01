@@ -4,6 +4,18 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
+@import 'components/header';
+@import 'components/header-catalog';
+@import 'components/main';
+@import 'components/services';
+@import 'components/products';
+@import 'components/brand';
+@import 'components/comments';
+@import 'components/footer';
+
+@import 'components/slider';
+
+
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
@@ -30,6 +42,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -43,6 +59,14 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 32px;
+  @media only screen and (max-width: 568px) {
+    font-size: 24px;
+  }
 }
 
 a {
@@ -59,7 +83,7 @@ li {
 section,
 .section {
   position: relative;
-  padding: 40px 0;
+  padding: 5rem 0;
   @media screen and (max-width: $smDesktopWidth) {
     padding: 36px 0;
   }
@@ -101,6 +125,3 @@ section,
     max-width: $smPhoneWidth;
   }
 }
-
-// Modules:
-// example: @import "modules/my-module.scss";
