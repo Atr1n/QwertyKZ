@@ -1,1 +1,0 @@
-const openCatalog = document.getElementById('')
