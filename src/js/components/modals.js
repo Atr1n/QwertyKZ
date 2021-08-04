@@ -8,10 +8,11 @@ const btns = document.querySelectorAll(".open-btn"),
 
 btns.forEach((e => {
     e.addEventListener("click", (e => {
-        let a = e.currentTarget.getAttribute("data-path");
+        let a = e.currentTarget.getAttribute("data-path"); 
         modals.forEach((e => {
             e.classList.remove("modal--visible")
-        })), document.querySelector(`[data-target="modal"]`).classList.add("modal--visible"), modalOverlay.classList.add("modal-overlay--visible")
+            document.querySelector(`[data-target="modal"]`).classList.add("modal--visible"), modalOverlay.classList.add("modal-overlay--visible")
+        }))
     }))
 })) 
 
@@ -36,4 +37,3 @@ signUp.addEventListener('click', () => {
     modalOne.style.display = 'none'
     modalTwo.style.display = 'block'
 })
-

@@ -1,3 +1,3 @@
 import './components/slider'
-import './components/catalog'
+import './components/burger'
 import './components/modals'

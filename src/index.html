@@ -16,8 +16,7 @@
 				<div class="header-top">
 					<div class="header-top__item">
 						<ul>
-							<li><a data-target="modal" class="open-btn" href="#">Войти</a> </li>
-							<li><a href="#">Зарегистрироваться</a></li>
+							<li><a data-target="modal" class="open-btn" href="#">Войти/Зарегистрироваться</a></li>
 						</ul>
 					</div>
 				</div>
@@ -36,33 +35,48 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="header-wrapper">
 					<div class="header-list">
-						<div id="openCatalog" class="header-burger">
-							Все категории
+						<div id="category" class="header-burger">Категории</div>
+						<div id="nav" class="navigation">
+							<div class="navigation__inner">
+								<div class="category-menu">
+									<ul>
+										<li>Смартфоны и гаджеты</li>
+										<li>Ноутбуки и компьютеры</li>
+										<li>Всё для геймеров</li>
+										<li>ТВ, аудио, видео</li>
+										<li>Фототехника и квадрокоптеры</li>
+										<li>Бытовая техника</li>
+										<li>Техника для кухни</li>
+										<li>Красота и здоровье</li>
+										<li>Спорт, туризм, багаж</li>
+										<li>Автотовары и транспорт</li>
+										<li>Детские товары</li>
+										<li>Товары для дома и сада</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div id="catalog" class="header-catalog none">
-							<ul>
-								<li><a href="">asd</a></li>
-								<li><a href="">asd</a></li>
-								<li><a href="">asd</a></li>
-								<li><a href="">asd</a></li>
-								<li><a href="">asd</a></li>
-							</ul>
+						<div class="overlay">
+							<div class="header-list-item">
+								<nav class="overlayMenu">
+									<ul class="header-list__item">
+										<li><a href="#">Акции</a></li>
+										<li><a href="#">Для партнеров</a></li>
+										<li><a href="#">Частные объявления</a></li>
+										<li><a href="#">Новости</a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 						<div class="header-list-item">
-							<ul>
-								<li><a href="#">Акции</a> </li>
-								<li><a href="#">Для партнеров</a> </li>
-								<li><a href="#">Частные объявления</a> </li>
-								<li><a href="#">Новости</a></li>
-							</ul>
-						</div>
-						<div class="header-list-item">
-							<input type="search" placeholder="Огромный выбор товаров">
+							<input type="search" placeholder="Поиск товаров">
 						</div>
 					</div>
 				</div>
+				<div class="navBurger" role="navigation" id="navToggle"></div>
 			</div>
 		</header>
 
@@ -334,7 +348,7 @@
 				<div class="comments-content">
 					<div class="comments-item">
 						<div class="comments-item__img">
-							<img src="assets/img/photo_2021-08-02_13-00-47.jpg" alt="клиент">
+							<img src="assets/img/comments-1.jpg" alt="клиент">
 						</div>
 						<div class="comments-item__title">
 							<h3>Нурсултанов Руслан</h3>
@@ -346,7 +360,7 @@
 					</div>
 					<div class="comments-item">
 						<div class="comments-item__img">
-							<img src="assets/img/client-2.jpg" alt="клиент">
+							<img src="assets/img/comments-2.jpg" alt="клиент">
 						</div>
 						<div class="comments-item__title">
 							<h3>Нурсултанов Руслан</h3>
@@ -358,7 +372,7 @@
 					</div>
 					<div class="comments-item">
 						<div class="comments-item__img">
-							<img src="assets/img/client-3.jpg" alt="клиент">
+							<img src="assets/img/comments-3.jpg" alt="клиент">
 						</div>
 						<div class="comments-item__title">
 							<h3>Нурсултанов Руслан</h3>
@@ -576,14 +590,26 @@
 				<div class="modal" data-target="form-popup">
 					<div class="modal-tabs">
 						<div id="signIn" class="modal-tabs-item modal-active-1">
-							<h3>Войти</h3>
+							<h3>Регистрация</h3>
 						</div>
 						<div id="signUp" class="modal-tabs-item">
-							<h3>Зарегистрироваться</h3>
+							<h3>Вход</h3>
 						</div>
 					</div>
 					<form role="form" action="#" method="post" class="form modal-1">
 						<div class="form-wrapper">
+							<div class="form-wrapper__links">
+								<div class="form-wrapper__link">
+									<a href="#"><img src="assets/img/modals/google.svg" alt="Войти через google" width="100"></a>
+								</div>
+								<div class="form-wrapper__link">
+									<a href="#"><img src="assets/img/modals/facebook.svg" alt="Войти через facebook" width="100"></a>
+								</div>
+								<div class="form-wrapper__link">
+									<p>Или</p>
+									<img class="form-wrapper__img" src="assets/img/modals/arrow.svg" alt="Войти через facebook" width="50">
+								</div>
+							</div>
 							<input name="name" type="name" placeholder="Имя..." required>
 							<input name="email" type="email" placeholder="Почта..." required>
 							<input name="phone" type="phone" class="phone" placeholder="Мобильный телефон..." required>
@@ -591,23 +617,36 @@
 							<div class="modal-checkbox">
 								<label for="checkbox">
 									<input id="checkbox" name="checkbox" type="checkbox" class="checkbox" required>
-									<p>adssadasdasdsa</p>
+									<p>Я подтверждаю, что ознакомлен и согласен с условиями <a href="#">Политики конфиденциальности</a></p>
 								</label>
 							</div>
-							<button name="submit" type="submit" class="form-wrapper-submit">Оставить заявку</button>
+							<div class="form-wrapper__btn">
+								<button name="submit" type="submit" class="form-wrapper-submit">Регистрация</button>
+							</div>
 						</div>
 					</form>
 					<form role="form" action="#" method="post" class="form modal-2">
 						<div class="form-wrapper">
+							<div class="form-wrapper__links">
+								<div class="form-wrapper__link">
+									<a href="#"><img src="assets/img/modals/google.svg" alt="Войти через google" width="100"></a>
+								</div>
+								<div class="form-wrapper__link">
+									<a href="#"><img src="assets/img/modals/facebook.svg" alt="Войти через facebook" width="100"></a>
+								</div>
+								<div class="form-wrapper__link">
+									<p>Или</p>
+									<img class="form-wrapper__img" src="assets/img/modals/arrow.svg" alt="Войти через facebook" width="50">
+								</div>
+							</div>
 							<input name="name" type="name" placeholder="Имя..." required>
 							<input name="email" type="email" placeholder="Почта..." required>
-							<div class="modal-checkbox">
-								<label for="checkbox">
-									<input id="checkbox" name="checkbox" type="checkbox" class="checkbox" required>
-									<p>adssadasdasdsa</p>
-								</label>
+							<div class="modal-pass">
+								<a href="#">Забыли пароль?</a>
 							</div>
-							<button name="submit" type="submit" class="form-wrapper-submit">Оставить заявку</button>
+							<div class="form-wrapper__btn">
+								<button	button name="submit" type="submit" class="form-wrapper-submit">Вход</button>
+							</div>
 						</div>
 					</form>
 				</div>

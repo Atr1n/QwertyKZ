@@ -6,6 +6,10 @@
         padding-bottom: 1rem;
         margin-bottom: 3rem;
         border-bottom: 1px solid #666;
+        @media only screen and (max-width:550px) {
+            margin-bottom: 2rem;
+            justify-content: flex-start;
+        }
         ul {
             display: flex;
             li {
@@ -32,6 +36,13 @@
     }
     &-item {
         display: flex;
+        a {
+            img {
+                @media only screen and (max-width:550px) {
+                    width: 150px;
+                }
+            }
+        }
         &__basket {
             padding: 10px;
             margin-left: 1rem;
@@ -40,6 +51,10 @@
             border-radius: 50%;
             background: $blue;
             cursor: pointer;
+            @media only screen and (max-width:550px) {
+                width: 50px;
+                height: 50px;
+            }
         }
         &__star{
             padding: 10px;
@@ -48,6 +63,10 @@
             border-radius: 50%;
             background: $yellow;
             cursor: pointer;
+            @media only screen and (max-width:550px) {
+                width: 50px;
+                height: 50px;
+            }
         }
     }
     &-list {
@@ -57,6 +76,9 @@
         &-item {
             &:last-child {
                 margin-left: auto;
+                @media only screen and (max-width:550px) {
+                    margin-left: 0;
+                }
             }
             input {
                 width: 200px;
@@ -65,13 +87,22 @@
                 font-size: 16px;
             }
         }
-        ul {
+        &__item {
             display: flex;
             justify-content: space-between;
             margin-left: 3rem;
+            @media only screen and (max-width:550px) {
+                display: grid;
+            }
             li {
+                @media only screen and (max-width:550px) {
+                    margin-bottom: 1rem;
+                }
                 &:not(:first-child) {
                     margin-left: 1rem;
+                    @media only screen and (max-width:550px) {
+                        margin-left: 0;
+                    }
                 }
                 a {
                     margin-left: 2rem;
@@ -85,6 +116,9 @@
                 }
             }
         }
+    }
+    &-ddp {
+        height: 50px;
     }
 }
 
