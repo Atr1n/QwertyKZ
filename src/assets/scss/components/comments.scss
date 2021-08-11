@@ -13,9 +13,9 @@
     }
     &-content {
         padding: 5rem 1rem 0.5rem 0.5rem;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
         justify-content: center;
-        align-items: center;
         @media only screen and (max-width: 568px) {
             display: grid;
         }
@@ -23,7 +23,6 @@
     &-item {
         position: relative;
         padding: 1rem;
-        display: grid;
         justify-content: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 15px;
@@ -45,8 +44,8 @@
         &__img {
             position: absolute;
             top: -40px;
-            width: 68px;
-            height: 68px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto;
             overflow: hidden;
             position: relative;

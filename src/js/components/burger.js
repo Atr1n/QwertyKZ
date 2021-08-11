@@ -10,6 +10,7 @@ navToggle.addEventListener('click', () => {
 
 let btn = document.getElementById("category")
 let btnNav = document.getElementById("btn-nav")
+let btnClose = document.getElementById("btn-close")
 let nav = document.getElementById("nav")
 
 btn.addEventListener('click', () => {
@@ -18,6 +19,11 @@ btn.addEventListener('click', () => {
 })
 
 btnNav.addEventListener('click', () => {
+    nav.classList.toggle('active')
+    btn.classList.add('btn-active')
+})
+
+btnClose.addEventListener('click', () => {
     nav.classList.toggle('active')
     btn.classList.add('btn-active')
 })

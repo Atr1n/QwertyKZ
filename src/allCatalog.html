@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top__item">
+					<ul>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-content">
+				<div class="header-item">
+					<a href="index.html">
+						<img src="assets/img/logo.svg" alt="Qwerty" width="200">
+					</a>
+				</div>
+				<div class="header-item">
+					<div class="header-item__star">
+						<img src="assets/img/избр.svg" alt="Корзина" width="50" height="50">
+					</div>
+					<div class="header-item__basket">
+						<img src="assets/img/корз.svg" alt="Корзина" width="50" height="50">
+					</div>
+				</div>
+			</div>
+
+			<div class="header-wrapper">
+				<div class="header-mobile dn-desktop">
+					<div class="header-mobile-item">
+						<img class="header-mobile-img-1" src="assets/img/header-mob/tovars.svg" alt="Топ" width="30">
+					</div>
+					<div class="header-mobile-item">
+						<img class="header-mobile-img-2" src="assets/img/header-mob/action.svg" alt="Акции" width="30">
+					</div>
+					<div id="btn-nav" class="header-mobile-item header-mobile-logo">
+						<img class="header-mobile-img-3" src="assets/img/header-mob/logo-mobile.svg" alt="Qwerty" width="40">
+					</div>
+					<div data-target="modal" class="header-mobile-item open-btn">
+						<img class="header-mobile-img-4" src="assets/img/header-mob/lk.svg" alt="Личный кабинет" width="30">
+					</div>
+					<div class="header-mobile-item">
+						<img class="header-mobile-img-5" src="assets/img/header-mob/izb.svg" alt="Избранное" width="30">
+					</div>
+				</div>
+				<div class="header-list">
+					<div id="category" class="category header-burger dn-mob">Категории</div>
+					<div id="nav" class="navigation">
+						<div class="navigation__inner">
+							<div class="category-menu">
+								<ul>
+									<li><a href="#">Смартфоны и гаджеты</a></li>
+									<li><a href="#">Ноутбуки и компьютеры</a></li>
+									<li><a href="#">Всё для геймеров</a></li>
+									<li><a href="#">ТВ, аудио, видео</a></li>
+									<li><a href="#">Фототехника и квадрокоптеры</a></li>
+									<li><a href="#">Бытовая техника</a></li>
+									<li><a href="#">Техника для кухни</a></li>
+									<li><a href="#">Красота и здоровье</a></li>
+									<li><a href="#">Спорт, туризм, багаж</a></li>
+									<li><a href="#">Автотовары и транспорт</a></li>
+									<li><a href="#">Детские товары</a></li>
+									<li><a href="#">Товары для дома и сада</a></li>
+								</ul>
+								<div id="btn-close" class="category header-burger dn-mob">Закрыть</div>
+							</div>
+						</div>
+					</div>
+					<div class="overlay">
+						<div class="header-list-item">
+							<nav class="overlayMenu">
+								<ul class="header-list__item">
+									<li><a href="allCatalog.html">Каталог товаров</a></li>
+									<li class="dn-mob"><a href="#">Акции</a></li>
+									<li><a href="#">Для партнеров</a></li>
+									<li><a href="#">Новости</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header-list-item header-list-search">
+						<input type="search" placeholder="Поиск товаров">
+					</div>
+					<div class="header-list-item dn-mob">
+						<ul>
+							<li><a data-target="modal" class="open-btn" href="#">Войти | Регистрация</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="navBurger" role="navigation" id="navToggle"></div>
+		</div>
+	</header>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog-content">
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/смартфоны.svg" width="25" alt="Смартфоны">
+					</div>
+					<div class="catalog-item__text">
+						<p>Смартфоны и гаджеты</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/ноутбуки.svg" width="35" alt="Ноутбуки">
+					</div>
+					<div class="catalog-item__text">
+						<p>Ноутбуки и компьютеры</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/гейм.svg" width="35" alt="Все для геймеров">
+					</div>
+					<div class="catalog-item__text">
+						<p>Все для геймеров</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/тв.svg" width="35" alt="Тв, аудио, видео">
+					</div>
+					<div class="catalog-item__text">
+						<p>Тв, аудио, <br> видео</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/фото.svg" width="35" alt="Фототехника и квадрокоптеры">
+					</div>
+					<div class="catalog-item__text">
+						<p>Фототехника и <br> квадрокоптеры</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/быт.svg" width="35" alt="Бытовая техника">
+					</div>
+					<div class="catalog-item__text">
+						<p>Бытовая <br> техника</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/кухн.svg" width="35" alt="Техника для кухни">
+					</div>
+					<div class="catalog-item__text">
+						<p>Техника для <br> кухни</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/красота.svg" width="35" alt="Красота и здоровье">
+					</div>
+					<div class="catalog-item__text">
+						<p>Красота и <br> здоровье</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/спорт.svg" width="35" alt="Спорт, туризм, багаж">
+					</div>
+					<div class="catalog-item__text">
+						<p>Спорт, <br> туризм, багаж</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/авто.svg" width="35" alt="Автотовары и транспорт">
+					</div>
+					<div class="catalog-item__text">
+						<p>Автотовары и <br> транспорт</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/детск.svg" width="35" alt="Детские товары">
+					</div>
+					<div class="catalog-item__text">
+						<p>Детские <br> товары</p>
+					</div>
+				</a>
+				<a class="catalog-item" href="#">
+					<div class="catalog-item__img">
+						<img src="assets/img/product-icons/быт.svg" width="35" alt="Товары для дома и сада">
+					</div>
+					<div class="catalog-item__text">
+						<p>Товары для дома <br> и сада</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-item">
+					<div class="footer-title">
+						<h2>Присоединяйтесь</h2>
+					</div>
+					<div class="footer-social">
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/fb.svg" width="40" alt="Facebook"></a>
+						</div>
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/vk.svg" width="40" alt="Vk"></a>
+						</div>
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/instagram.svg" width="40" alt="Instagram"></a>
+						</div>
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/youtube.svg" width="40" alt="Youtube"></a>
+						</div>
+					</div>
+					<div class="footer-logo">
+						<a href="index.html"><img src="assets/img/logo.svg" alt="qwerty" width="200"></a>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-title">
+						<h2>Компания QWERTY</h2>
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Информация о сети</a></li>
+							<li><a href="#">Оптовый отдел</a></li>
+							<li><a href="#">Тендеры</a></li>
+							<li><a href="#">Партнерство</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-title">
+						<h2>Полезно</h2>
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Советы по выбору техники</a></li>
+							<li><a href="#">Условия возврата и гарантии</a></li>
+							<li><a href="#">Программа лояльности "QWERTYcoins"</a></li>
+							<li><a href="#">Партнерство</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<p>Qwerty.kz © 2021. Все права защищены.</p>
+		</div>
+	</footer>
+
+
+	<div class="modals">
+		<div class="modal-overlay">
+			<div class="modal" data-target="form-popup">
+				<div class="modal-tabs">
+					<div id="signIn" class="modal-tabs-item modal-active-1">
+						<h3>Регистрация</h3>
+					</div>
+					<div id="signUp" class="modal-tabs-item">
+						<h3>Вход</h3>
+					</div>
+				</div>
+				<form role="form" action="#" method="post" class="form modal-1">
+					<div class="form-wrapper">
+						<div class="form-wrapper__links">
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/google.svg" alt="Войти через google" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/facebook.svg" alt="Войти через facebook" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<p>Или</p>
+								<img class="form-wrapper__img" src="assets/img/modals/arrow.svg" alt="Войти через facebook" width="50">
+							</div>
+						</div>
+						<input name="name" type="name" placeholder="Имя..." required>
+						<input name="email" type="email" placeholder="Почта..." required>
+						<input name="phone" id="phone" type="phone" class="phone" placeholder="Мобильный телефон..." required>
+						<input name="password" type="password" class="password" placeholder="Пароль..." required>
+						<div class="modal-checkbox">
+							<label for="checkbox">
+								<input id="checkbox" name="checkbox" type="checkbox" class="checkbox" required>
+								<p>Я подтверждаю, что ознакомлен и согласен с условиями <a href="#">Политики конфиденциальности</a></p>
+							</label>
+						</div>
+						<div class="form-wrapper__btn">
+							<button name="submit" type="submit" class="form-wrapper-submit">Регистрация</button>
+						</div>
+					</div>
+				</form>
+				<form role="form" action="#" method="post" class="form modal-2">
+					<div class="form-wrapper">
+						<div class="form-wrapper__links">
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/google.svg" alt="Войти через google" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/facebook.svg" alt="Войти через facebook" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<p>Или</p>
+								<img class="form-wrapper__img" src="assets/img/modals/arrow.svg" alt="Войти через facebook" width="50">
+							</div>
+						</div>
+						<input name="name" type="name" placeholder="Имя..." required>
+						<input name="email" type="email" placeholder="Почта..." required>
+						<div class="modal-pass">
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<div class="form-wrapper__btn">
+							<button	button name="submit" type="submit" class="form-wrapper-submit">Вход</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

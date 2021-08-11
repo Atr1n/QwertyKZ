@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product In</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top__item">
+					<ul>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-content">
+				<div class="header-item">
+					<a href="index.html">
+						<img src="assets/img/logo.svg" alt="Qwerty" width="200">
+					</a>
+				</div>
+				<div class="header-item">
+					<div class="header-item__star">
+						<img src="assets/img/избр.svg" alt="Корзина" width="50" height="50">
+					</div>
+					<div class="header-item__basket">
+						<img src="assets/img/корз.svg" alt="Корзина" width="50" height="50">
+					</div>
+				</div>
+			</div>
+
+			<div class="header-wrapper">
+				<div class="header-mobile dn-desktop">
+					<div class="header-mobile-item">
+						<img class="header-mobile-img-1" src="assets/img/header-mob/tovars.svg" alt="Топ" width="30">
+					</div>
+					<div class="header-mobile-item">
+						<img class="header-mobile-img-2" src="assets/img/header-mob/action.svg" alt="Акции" width="30">
+					</div>
+					<div id="btn-nav" class="header-mobile-item header-mobile-logo">
+						<img class="header-mobile-img-3" src="assets/img/header-mob/logo-mobile.svg" alt="Qwerty" width="40">
+					</div>
+					<div data-target="modal" class="header-mobile-item open-btn">
+						<img class="header-mobile-img-4" src="assets/img/header-mob/lk.svg" alt="Личный кабинет" width="30">
+					</div>
+					<div class="header-mobile-item">
+						<img class="header-mobile-img-5" src="assets/img/header-mob/izb.svg" alt="Избранное" width="30">
+					</div>
+				</div>
+				<div class="header-list">
+					<div id="category" class="category header-burger dn-mob">Категории</div>
+					<div id="nav" class="navigation">
+						<div class="navigation__inner">
+							<div class="category-menu">
+								<ul>
+									<li><a href="#">Смартфоны и гаджеты</a></li>
+									<li><a href="#">Ноутбуки и компьютеры</a></li>
+									<li><a href="#">Всё для геймеров</a></li>
+									<li><a href="#">ТВ, аудио, видео</a></li>
+									<li><a href="#">Фототехника и квадрокоптеры</a></li>
+									<li><a href="#">Бытовая техника</a></li>
+									<li><a href="#">Техника для кухни</a></li>
+									<li><a href="#">Красота и здоровье</a></li>
+									<li><a href="#">Спорт, туризм, багаж</a></li>
+									<li><a href="#">Автотовары и транспорт</a></li>
+									<li><a href="#">Детские товары</a></li>
+									<li><a href="#">Товары для дома и сада</a></li>
+								</ul>
+								<div id="btn-close" class="category header-burger dn-mob">Закрыть</div>
+							</div>
+						</div>
+					</div>
+					<div class="overlay">
+						<div class="header-list-item">
+							<nav class="overlayMenu">
+								<ul class="header-list__item">
+									<li><a href="allCatalog.html">Каталог товаров</a></li>
+									<li class="dn-mob"><a href="#">Акции</a></li>
+									<li><a href="#">Для партнеров</a></li>
+									<li><a href="#">Новости</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header-list-item header-list-search">
+						<input type="search" placeholder="Поиск товаров">
+					</div>
+					<div class="header-list-item dn-mob">
+						<ul>
+							<li><a data-target="modal" class="open-btn" href="#">Войти | Регистрация</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="navBurger" role="navigation" id="navToggle"></div>
+		</div>
+	</header>
+
+    <section class="productin">
+        <div class="container">
+            <div class="productin-content">
+				<div class="productin-item">
+					<div class="productin-item__list">
+						<ul>
+							<li id="stateOneShow" >
+								<a href="#">Обзор товара</a>
+								<img src="assets/img/arrow-yellow.svg" width="10" alt="посмотреть">
+							</li>
+							<li id="stateTwoShow" >
+								<a href="#">Характеристики</a>
+								<img src="assets/img/arrow-yellow.svg" width="10" alt="посмотреть">
+							</li>
+							<li>
+								<a href="#">Отзывы</a>
+								<img src="assets/img/arrow-yellow.svg" width="10" alt="посмотреть">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="stateOne" class="overview all-bg">
+					<div class="overview-item__title">
+						<h1>Смартфон Samsung Galaxy A02 32GB Black</h1>
+					</div>
+					<div class="overview-content">
+						<div class="overview-wrapper">
+							<div class="overview-item">
+								<div class="overview-item__img">
+									<a href="#">
+										<img src="https://www.technodom.kz/media/catalog/product/cache/1366e688ed42c99cd6439df4031862c6/5/c/5c939b829eaea32ff6cb199ba137b8c7aa755524_234610_1.jpg" alt="">
+									</a>
+								</div>
+								<div class="overview-item__preview">
+									<!-- Превью картинки  -->
+								</div>
+							</div>
+							<div class="overview-item">
+								<div class="overview-item__price">
+									<a href="#">Отслеживать сниженные цены</a>
+									<span>49 990 $</span>
+								</div>
+								<div class="overview-item__btns">
+									<a href="#">В избранное</a>
+									<a href="#">В корзину</a>
+								</div>
+								<div class="overview-item__choice">
+									<div class="overview-item__choice-item">
+										<div class="overview-item__choice-item__title">
+											<h3>Цвет</h3>
+										</div>
+										<div class="overview-item__choice-item__colors">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+									</div>
+									<div class="overview-item__choice-item">
+										<div class="overview-item__choice-item__title">
+											<h3>Память</h3>
+										</div>
+										<div class="overview-item__choice-item__radio">
+											<label for="32">
+												<input id="32" type="radio">
+												<span>32 ГБ</span>
+											</label>
+											<label for="64">
+												<input id="64" type="radio">
+												<span>64 ГБ</span>
+											</label>
+										</div>
+									</div>
+									<div class="overview-item__desc">
+										<div class="overview-item__desc-title">
+											<h3>Описание</h3>
+										</div>
+										<div class="overview-item__desc-list">
+											<ul>
+												<li>Диагональ дисплея, дюйм: <strong>6.5</strong></li>
+												<li>Разрешение дисплея: <strong>720x1600</strong></li>
+												<li>Операционная система: <strong>Android 10.0</strong></li>
+												<li>Объем оперативной памяти, ГБ: <strong>2</strong></li>
+												<li>Объем встроенной памяти, ГБ: <strong>32</strong></li>
+												<li>Количество SIM-карт: <strong>2</strong></li>
+												<li>Ёмкость аккумулятора, mAh: <strong>5000</strong></li>
+												<li>Модельный год: <strong>2021</strong></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-product">
+							<div class="container">
+								<div class="about-product__title">
+									<h2>О товаре</h2>
+								</div>
+								<div class="about-product__content">
+									<div class="about-product__item">
+										<div class="about-product__desc">
+											<h2>Безграничный V-экран для больших возможностей</h2>
+											<p>Большой 6,5-дюймовый HD+ экран с V-образным вырезом для камеры создан для и полного погружения в контент.</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/1.jpg" alt="">
+										</div>
+										<div class="about-product__text">
+											<p>*Изображения смоделированы и служат лишь иллюстрацией к текстам.
+												*Измеренный по диагонали, размер экрана составляет 6,5 дюйма в полном прямоугольнике и 6,4 дюйма с учетом закругленных углов. Фактическая видимая область меньше из-за закругленных углов и области камеры.</p>
+										</div>
+									</div>
+									<div class="about-product__item">
+										<div class="about-product__desc">
+											<h2>Классический дизайн и тонкий корпус</h2>
+											<p>Galaxy A02 выполнен в классическом стиле: поверхность задней крышки матовая с текстурой в полоску. Смартфон удобно ложится в руку и имеет тонкий 9.1 мм корпус. Выберите один из доступных цветов: черный, красный или синий.</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/2.png" alt="">
+										</div>
+										<div class="about-product__text">
+											<p>*Доступность цветов может зависеть от страны или оператора сотовой связи.</p>
+										</div>
+									</div>
+									<div class="about-product__item">
+										<div class="about-product__desc">
+											<h2>Безупречные кадры на основную и фронтальную камеру</h2>
+											<p>Снимайте яркие и красивые фотографии на основную 13-мегапиксельную камеру Galaxy A02 или переключитесь на макро камеру и зафиксируйте мельчайшие детали и объекты.</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/3.webp" alt="">
+										</div>
+										<div class="about-product__text">
+											<p>*Доступность цветов может зависеть от страны или оператора сотовой связи.</p>
+										</div>
+									</div>
+									<div class="about-product__item">
+										<div class="about-product__desc">
+											<h2>Высокая производительность: делай еще больше</h2>
+											<p>Мощный аккумулятор емкостью 5000 мАч (типичное значение)* позволяет играть, выходить в прямой эфир и обмениваться файлами, не задумываясь о заряде батареи.</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/4.jpg" alt="">
+										</div>
+										<div class="about-product__text">
+											<p>*Типичные значения результатов испытаний были получены в лабораториях третьих фирм. Типичное значение - это среднее значение, учитывающее разбросы результатов измерений емкости нескольких образцов батареи по методике, стандарта IEC 61960. Номинальное (минимальное) значение емкости составляет 4900 мАч. Фактический рабочий ресурс батареи может зависеть от сетевого окружения, особенностей использования и других факторов.</p>
+										</div>
+									</div>
+									<div class="about-product__item">
+										<div class="about-product__desc">
+											<h2>Оптимальное сочетание характеристик</h2>
+											<p>Galaxy A02 создан для решения повседневных задач: передачи данных, загрузки и хранения контента. Смартфон оснащен 2ГБ оперативной памяти в сочетании с 32 ГБ встроенной памяти, а также поддержкой microSD карты до 1ТБ.</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/5.webp" alt="">
+										</div>
+										<div class="about-product__text">
+											<p>*Объем оперативной (ОЗУ) и встроенной памяти может зависеть от страны продажи.
+												** Карта памяти MicroSD приобретается отдельно</p>
+										</div>
+									</div>
+									<div class="about-product__item">
+										<div class="about-product__desc">
+											<h2>Простой и удобный интерфейс One UI Core</h2>
+											<p>Сконцентрируйтесь на самом важном. Аппаратное и программное обеспечение работают в полной гармонии друг с другом, чтобы вы могли легко и быстро пользоваться контентом и функциями телефона. "Ночной режим", на который переключается телефон в вечернее время, позволяет оптимизировать яркость экрана, чтобы обеспечить комфортные условия просмотра контента в темное время суток.</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/6.webp" alt="">
+										</div>
+										<div class="about-product__text">
+											<p>*Изображения смоделированы и служат лишь иллюстрацией к текстам.
+												*Доступность функций интерфейса One UI Core, приложений и сервисов может зависеть от типа устройства, версии ОС и страны</p>
+										</div>
+									</div>
+									<div class="about-product__item about-product__item-grid">
+										<div class="about-product__desc">
+											<h2>Доступность сервисов без ограничений</h2>
+											<p>Galaxy A02 поддерживает работу сервисов и приложений Google.</p>
+											<p>*Доступность некоторых приложении Google может зависеть от страны продажи и типа устройства</p>
+										</div>
+										<div class="about-product__img">
+											<img src="https://www.technodom.kz/under/tab_showcase/234610/7.webp" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="stateTwo" class="overview all-bg">
+					<div class="overview-item__title">
+						<h1>Смартфон Samsung Galaxy A02 32GB Black</h1>
+					</div>
+					<div class="charact">
+						<div class="charact-content">
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Основные характеристики</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Производитель:</li>
+										<li>Samsung</li>
+									</ul>
+									<ul>
+										<li>Операционная система:</li>
+										<li>Android</li>
+									</ul>
+									<ul>
+										<li>Google-сервисы:</li>
+										<li>Да</li>
+									</ul>
+									<ul>
+										<li>Количество SIM-карт:</li>
+										<li>2</li>
+									</ul>
+									<ul>
+										<li>Материал корпуса:</li>
+										<li>Металл, пластик</li>
+									</ul>
+									<ul>
+										<li>Страна производителя:</li>
+										<li>Вьетнам</li>
+									</ul>
+									<ul>
+										<li>Особенности:</li>
+										<li>5000 мАч батарея, LED вспышка, Дисплей 6,5</li>
+									</ul>
+									<ul>
+										<li>Комплектация:</li>
+										<li>Смартфон, зарядное устройство, ключ для лотка сим-карты, инструкция</li>
+									</ul>
+									<ul>
+										<li>Функция и особенности:</li>
+										<li>Вспышка экрана, Поддержка 4G</li>
+									</ul>
+								</div>
+							</div>
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Дисплей</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Диагональ дисплея:</li>
+										<li>6,5" - 16,51 см</li>
+									</ul>
+									<ul>
+										<li>Тип матрицы:</li>
+										<li>PLS TFT LCD</li>
+									</ul>
+									<ul>
+										<li>Разрешения экрана:</li>
+										<li>720х1600 (HD+)</li>
+									</ul>
+								</div>
+							</div>
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Память и процессор</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Объем оперативной памяти:</li>
+										<li>2 ГБ</li>
+									</ul>
+									<ul>
+										<li>Объем встроенной памяти:</li>
+										<li>32 ГБ</li>
+									</ul>
+									<ul>
+										<li>Процессор:</li>
+										<li>Mediatek MTK 6739WW 4 x 1.5 ГГц</li>
+									</ul>
+									<ul>
+										<li>Частота процессора:</li>
+										<li>1.5 ГГц</li>
+									</ul>
+									<ul>
+										<li>Количество ядер процессора:</li>
+										<li>4</li>
+									</ul>
+								</div>
+							</div>
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Фотокамера</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Основная камера:</li>
+										<li>13 Mpx + 2 Mpx</li>
+									</ul>
+									<ul>
+										<li>Фронтальная камера:</li>
+										<li>5 Mpx</li>
+									</ul>
+									<ul>
+										<li>Разрешение видеосъемки:</li>
+										<li>1920x1080 Пикс (FullHD)</li>
+									</ul>
+									<ul>
+										<li>Встроенная вспышка:</li>
+										<li>Да</li>
+									</ul>
+								</div>
+							</div>
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Связь</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Интерфейсы:</li>
+										<li>Micro USB, BLuetooth v5.0</li>
+									</ul>
+									<ul>
+										<li>Разъемы:</li>
+										<li>Mini Jack 3.5 мм</li>
+									</ul>
+									<ul>
+										<li>Поддержка GPS:</li>
+										<li>Да</li>
+									</ul>
+									<ul>
+										<li>Стандарт связи:</li>
+										<li>4G</li>
+									</ul>
+									<ul>
+										<li>Тип SIM карты:</li>
+										<li>nano SIM</li>
+									</ul>
+									<ul>
+										<li>Слот карты памяти:</li>
+										<li>Отдельный слот для карты памяти</li>
+									</ul>
+								</div>
+							</div>
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Электропитание</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Емкость аккумулятора:</li>
+										<li>5000 мАч</li>
+									</ul>
+								</div>
+							</div>
+							<div class="charact-item">
+								<div class="charact-item__title">
+									<h2>Габариты, вес и цвет</h2>
+								</div>
+								<div class="charact-item__list">
+									<ul>
+										<li>Габариты:</li>
+										<li>164 х 75.9 х 91.мм</li>
+									</ul>
+									<ul>
+										<li>Вес:</li>
+										<li>206 г</li>
+									</ul>
+									<ul>
+										<li>Цвет:</li>
+										<li>Черный</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-item">
+					<div class="footer-title">
+						<h2>Присоединяйтесь</h2>
+					</div>
+					<div class="footer-social">
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/fb.svg" width="40" alt="Facebook"></a>
+						</div>
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/vk.svg" width="40" alt="Vk"></a>
+						</div>
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/instagram.svg" width="40" alt="Instagram"></a>
+						</div>
+						<div class="footer-social__item">
+							<a href="#"><img src="assets/img/media/youtube.svg" width="40" alt="Youtube"></a>
+						</div>
+					</div>
+					<div class="footer-logo">
+						<a href="index.html"><img src="assets/img/logo.svg" alt="qwerty" width="200"></a>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-title">
+						<h2>Компания QWERTY</h2>
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Информация о сети</a></li>
+							<li><a href="#">Оптовый отдел</a></li>
+							<li><a href="#">Тендеры</a></li>
+							<li><a href="#">Партнерство</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-title">
+						<h2>Полезно</h2>
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Советы по выбору техники</a></li>
+							<li><a href="#">Условия возврата и гарантии</a></li>
+							<li><a href="#">Программа лояльности "QWERTYcoins"</a></li>
+							<li><a href="#">Партнерство</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<p>Qwerty.kz © 2021. Все права защищены.</p>
+		</div>
+	</footer>
+
+	<div class="modals">
+		<div class="modal-overlay">
+			<div class="modal" data-target="form-popup">
+				<div class="modal-tabs">
+					<div id="signIn" class="modal-tabs-item modal-active-1">
+						<h3>Регистрация</h3>
+					</div>
+					<div id="signUp" class="modal-tabs-item">
+						<h3>Вход</h3>
+					</div>
+				</div>
+				<form role="form" action="#" method="post" class="form modal-1">
+					<div class="form-wrapper">
+						<div class="form-wrapper__links">
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/google.svg" alt="Войти через google" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/facebook.svg" alt="Войти через facebook" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<p>Или</p>
+								<img class="form-wrapper__img" src="assets/img/modals/arrow.svg" alt="Войти через facebook" width="50">
+							</div>
+						</div>
+						<input name="name" type="name" placeholder="Имя..." required>
+						<input name="email" type="email" placeholder="Почта..." required>
+						<input name="phone" id="phone" type="phone" class="phone" placeholder="Мобильный телефон..." required>
+						<input name="password" type="password" class="password" placeholder="Пароль..." required>
+						<div class="modal-checkbox">
+							<label for="checkbox">
+								<input id="checkbox" name="checkbox" type="checkbox" class="checkbox" required>
+								<p>Я подтверждаю, что ознакомлен и согласен с условиями <a href="#">Политики конфиденциальности</a></p>
+							</label>
+						</div>
+						<div class="form-wrapper__btn">
+							<button name="submit" type="submit" class="form-wrapper-submit">Регистрация</button>
+						</div>
+					</div>
+				</form>
+				<form role="form" action="#" method="post" class="form modal-2">
+					<div class="form-wrapper">
+						<div class="form-wrapper__links">
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/google.svg" alt="Войти через google" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<a href="#"><img src="assets/img/modals/facebook.svg" alt="Войти через facebook" width="100"></a>
+							</div>
+							<div class="form-wrapper__link">
+								<p>Или</p>
+								<img class="form-wrapper__img" src="assets/img/modals/arrow.svg" alt="Войти через facebook" width="50">
+							</div>
+						</div>
+						<input name="name" type="name" placeholder="Имя..." required>
+						<input name="email" type="email" placeholder="Почта..." required>
+						<div class="modal-pass">
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<div class="form-wrapper__btn">
+							<button	button name="submit" type="submit" class="form-wrapper-submit">Вход</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    
+</body>
+</html>

@@ -20,6 +20,12 @@
 @import 'components/header-mobile';
 @import 'components/category-menu';
 
+@import 'components/catalog';
+
+@import 'components/product-in/productin';
+@import 'components/product-in/overview';
+@import 'components/product-in/about-product';
+@import 'components/product-in/charact';
 
 html {
   line-height: $mainLineHeight;
