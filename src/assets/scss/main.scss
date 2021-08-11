@@ -15,8 +15,10 @@
 
 @import 'components/slider';
 @import 'components/modals';
-@import 'components/catalog-menu';
 @import 'components/burger';
+
+@import 'components/header-mobile';
+@import 'components/category-menu';
 
 
 html {
@@ -81,6 +83,19 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.dn-mob {
+   @media only screen and (max-width:550px) {
+     display: none !important;
+   }
+}
+
+.dn-desktop {
+    display: none;
+   @media only screen and (max-width:550px) {
+     display: grid;
+   }
 }
 
 section,

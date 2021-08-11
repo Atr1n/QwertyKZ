@@ -16,7 +16,7 @@
 				<div class="header-top">
 					<div class="header-top__item">
 						<ul>
-							<li><a data-target="modal" class="open-btn" href="#">Войти/Зарегистрироваться</a></li>
+							<li><a href="#">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -37,8 +37,25 @@
 				</div>
 
 				<div class="header-wrapper">
+					<div class="header-mobile dn-desktop">
+						<div class="header-mobile-item">
+							<img class="header-mobile-img-1" src="assets/img/header-mob/tovars.svg" alt="Топ" width="30">
+						</div>
+						<div class="header-mobile-item">
+							<img class="header-mobile-img-2" src="assets/img/header-mob/action.svg" alt="Акции" width="30">
+						</div>
+						<div id="btn-nav" class="header-mobile-item header-mobile-logo">
+							<img class="header-mobile-img-3" src="assets/img/header-mob/logo-mobile.svg" alt="Qwerty" width="40">
+						</div>
+						<div class="header-mobile-item">
+							<img class="header-mobile-img-4" src="assets/img/header-mob/lk.svg" alt="Личный кабинет" width="30">
+						</div>
+						<div class="header-mobile-item">
+							<img class="header-mobile-img-5" src="assets/img/header-mob/izb.svg" alt="Избранное" width="30">
+						</div>
+					</div>
 					<div class="header-list">
-						<div id="category" class="header-burger">Категории</div>
+						<div id="category" class="category header-burger dn-mob">Категории</div>
 						<div id="nav" class="navigation">
 							<div class="navigation__inner">
 								<div class="category-menu">
@@ -63,7 +80,7 @@
 							<div class="header-list-item">
 								<nav class="overlayMenu">
 									<ul class="header-list__item">
-										<li><a href="#">Акции</a></li>
+										<li><a class="dn-mob" href="#">Акции</a></li>
 										<li><a href="#">Для партнеров</a></li>
 										<li><a href="#">Частные объявления</a></li>
 										<li><a href="#">Новости</a></li>
@@ -71,8 +88,13 @@
 								</nav>
 							</div>
 						</div>
-						<div class="header-list-item">
+						<div class="header-list-item header-list-search">
 							<input type="search" placeholder="Поиск товаров">
+						</div>
+						<div class="header-list-item dn-mob">
+							<ul>
+								<li><a data-target="modal" class="open-btn" href="#">Войти | Регистрация</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -394,7 +416,7 @@
 				<div class="products-content">
 					<div class="products-item">
 						<div class="products-img">
-							<img src="assets/img/tovars/Defender OverLord GM-890.jpg" alt="товар" width="200" height="200">
+							<img src="assets/img/tovars/Kitfort KT-1399.jpg" alt="товар" width="100" height="100">
 						</div>
 						<div class="products-descr">
 							<h4>Aim Analog Watch</h4>
@@ -612,8 +634,8 @@
 							</div>
 							<input name="name" type="name" placeholder="Имя..." required>
 							<input name="email" type="email" placeholder="Почта..." required>
-							<input name="phone" type="phone" class="phone" placeholder="Мобильный телефон..." required>
-							<input name="phone" type="phone" class="phone" placeholder="Пароль..." required>
+							<input name="phone" type="phone" id="phone" class="phone" placeholder="Мобильный телефон..." required>
+							<input name="password" type="password" class="password" placeholder="Пароль..." required>
 							<div class="modal-checkbox">
 								<label for="checkbox">
 									<input id="checkbox" name="checkbox" type="checkbox" class="checkbox" required>

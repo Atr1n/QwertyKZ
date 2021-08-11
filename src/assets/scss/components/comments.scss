@@ -2,6 +2,9 @@
     padding-bottom: 10rem;
     background: url(/src/assets/img/bg-clients.jpg) center no-repeat;
     background-size: cover;
+    @media only screen and (max-width: 568px) {
+        padding-bottom: 0;
+    }
     &-title {
         h2 {
             font-size: 32px;

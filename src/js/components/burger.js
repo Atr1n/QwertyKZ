@@ -9,9 +9,15 @@ navToggle.addEventListener('click', () => {
 })
 
 let btn = document.getElementById("category")
+let btnNav = document.getElementById("btn-nav")
 let nav = document.getElementById("nav")
 
 btn.addEventListener('click', () => {
+    nav.classList.toggle('active')
+    btn.classList.add('btn-active')
+})
+
+btnNav.addEventListener('click', () => {
     nav.classList.toggle('active')
     btn.classList.add('btn-active')
 })
