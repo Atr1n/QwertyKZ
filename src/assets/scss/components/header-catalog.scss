@@ -102,19 +102,26 @@ $duration: map-get($elastic, 'duration');
 
 .navigation__inner {
   position: absolute;
-  width: 100%;
+  width: 20%;
   height: 100%;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow-y: auto;
   z-index: 200;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  @media only screen and (max-width:550px) {
+    width: 100%;
+  }
 
   @if ($position==right) {
-    transform: translate(0, 100%);
+      	transform: translate(100%, 0);
   }
 
   @else if ($position==left) {
-    transform: translate(0, 100%);
+     	transform: translate(-100%, 0);
+		@media only screen and (max-width:550px) {
+			transform: translate(0, 100%);
+		}
   }
 
   transition: transform $duration*1ms linear,

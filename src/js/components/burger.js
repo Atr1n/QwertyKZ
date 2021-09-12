@@ -1,6 +1,7 @@
 const navToggle = document.querySelector('#navToggle')
 const overlay = document.querySelector('.overlay')
 const body = document.querySelector('body')
+const navInContent = document.getElementById('navInContent')
 
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active')
@@ -24,6 +25,7 @@ btnNav.addEventListener('click', () => {
 })
 
 btnClose.addEventListener('click', () => {
+    navInContent.style.display = 'none'
     nav.classList.toggle('active')
     btn.classList.add('btn-active')
 })

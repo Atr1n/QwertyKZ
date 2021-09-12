@@ -19,6 +19,7 @@
 
 @import 'components/header-mobile';
 @import 'components/category-menu';
+@import 'components/navInContent';
 
 @import 'components/catalog';
 
@@ -147,5 +148,8 @@ section,
   }
   @media screen and (max-width: $phoneWidth) {
     max-width: $smPhoneWidth;
+  }
+  @media screen and (max-width: 320px) {
+    max-width: 290px;
   }
 }

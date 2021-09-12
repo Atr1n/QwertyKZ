@@ -1,0 +1,32 @@
+.nav__incontent {
+    display: none;
+    position: absolute;
+    width: 1000px;
+    top: 20px;
+    left: 70px;
+    padding: 1em;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 201;
+    &-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    &-item {
+        ul {
+            a {
+                color: $blue;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            li {
+                margin: 0.5em 0;
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
